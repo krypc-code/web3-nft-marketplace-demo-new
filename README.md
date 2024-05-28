@@ -1,1 +1,1 @@
-# web3-nft-marketplace-demo-new
+# web3-nft-marketplace-demo
