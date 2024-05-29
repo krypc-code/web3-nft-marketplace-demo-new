@@ -14,6 +14,7 @@ import Loader from './Loader';
 
 export default function Home() {
   const [nfts, setNfts] = useState([])
+  // console.log(nfts)
   const [loadingState, setLoadingState] = useState('not-loaded')
   useEffect(() => {
     loadNFTs()
@@ -24,7 +25,6 @@ export default function Home() {
     const contract = new ethers.Contract(marketplaceAddress, NFTMarketplace.abi, provider)
     console.log(contract)
     const data = await contract.fetchMarketItems()
-    console.log(data)
     
     /*
     *  map over items returned from smart contract and format 
